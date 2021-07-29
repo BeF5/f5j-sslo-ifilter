@@ -28,8 +28,8 @@ i-FILTERにてHTTP/HTTPS判別するためのiRuleの作成
 
                 if { [expr { [llength $ctx(headers)] % 2 }] == 0 } { 
                     foreach {h_name h_value} $ctx(headers) {
-                    HTTP::header replace ${h_name} ${h_value} 
-
+                        HTTP::header replace ${h_name} ${h_value} 
+                    }
                 }
             }    
     | 接続テストをされる際には、変数情報をログ出力するなどして意図する値が入っているか確かめて頂くことをおすすめします。

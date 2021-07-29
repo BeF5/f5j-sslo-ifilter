@@ -7,6 +7,14 @@ i-FILTER Proxy版（Linux版）の設定
     - SSL可視化ゾーン（ここではi-FILTER Proxy版）では、HTTPトラフィックは暗号化されておりませんので、第三者からのアクセスを避ける必要があります。そこで、SSLOでは、Auto Manage Addresses（RFC2544に定められているインターナル用アドレス、198.19.x.y/19）をセキュリティ機器に利用頂くことを推奨しております。
     - 上記推奨設定を採用できる場合、i-FILTER用のサーバ構築時にこのアドレス帯を割り当てて下さい。
 
+SSLO連携の設定
+---------------
+
+#. conf/ifilter.confに以下のパラメータを追加します。
+    .. code-block:: bash
+        proxy_header_rewrite_protocol_enable = on
+    |  
+    
 ユーザ認証の設定
 ---------------
 
