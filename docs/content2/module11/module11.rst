@@ -11,7 +11,9 @@ SSLO連携の設定
 ---------------
 
 #. conf/ifilter.confに以下のパラメータを追加します。
+
     .. code-block:: bash
+
             proxy_header_rewrite_protocol_enable = on
     |  
 
