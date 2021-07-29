@@ -15,7 +15,6 @@ SSLO連携の設定
     .. code-block:: bash
 
             proxy_header_rewrite_protocol_enable = on
-    |  
 
 ユーザ認証の設定
 ---------------
