@@ -114,3 +114,7 @@ SSLO連携の設定
     .. image:: images/mod11-14.png
     | 
 
+.. note::
+    - 必要に応じて、Connection: keep-aliveを有効にしてください。
+    - i-FILTER製品の詳細に関しては、メーカーにお問い合わせください。
+
